@@ -1,0 +1,6 @@
+import matplotlib.pyplot as plt
+
+def plot_trends(data):
+    plt.plot(data['date'], data['mentions'])
+    plt.title('Social Media Mentions Over Time')
+    plt.show()
