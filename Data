@@ -1,1 +1,8 @@
+from solana.rpc.api import Client
+
+client = Client("https://api.mainnet-beta.solana.com")
+
+def get_recent_block():
+    response = client.get_recent_blockhash()
+    return response["result"]["value"]["blockhash"]
 
